@@ -62,3 +62,9 @@ header {
     letter-spacing: 0.25px;
     text-align: center;
 }
+
+.tabs li {
+    box-sizing: border-box;
+    border: 1px solid rgb(193, 197, 205);
+    border-radius: 24px;
+}
