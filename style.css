@@ -16,7 +16,7 @@ header {
 .header_list ul {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 .header_list li {
@@ -53,6 +53,14 @@ header {
     align-items: baseline;
 }
 
+.section_1_nav p:first-child {
+    padding-right: 10px;
+}
+
+.section_1_nav p:last-child {
+    padding-left: 13px;
+}
+
 .section_1_nav p {
     color: rgba(51, 51, 51, 0.7);
     font-family: Montserrat;
@@ -63,8 +71,97 @@ header {
     text-align: center;
 }
 
+.section_1_title h1 {
+    color: rgb(51, 51, 51);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.tabs ul {
+    display: flex;
+    justify-content: space-between;
+}
+
 .tabs li {
     box-sizing: border-box;
     border: 1px solid rgb(193, 197, 205);
     border-radius: 24px;
+}
+
+.tabs li:hover {
+    box-sizing: border-box;
+    border: 2px solid rgb(22, 200, 187);
+    border-radius: 24px;
+}
+
+.article_img {
+    position: relative;
+    width: 100%;
+    max-width: 558px;
+}
+
+.article_buttons button {
+    position: absolute;
+    top: 8px;
+    display: flex;
+}
+
+.article_buttons button:last-child {
+    top: 47px;
+}
+
+.article_img button {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    display: flex;
+    box-sizing: border-box;
+    border: none;
+    border-left: 1px solid rgb(193, 197, 205);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.article_img button p {
+    margin: 0;
+}
+
+.section_2 {
+    padding: 23px;
+}
+
+.article_text h2 {
+    color: rgb(51, 51, 51);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.article_text p,
+span {
+    color: rgb(73, 73, 73);
+    font-family: Montserrat;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    text-align: left;
+    margin: 0;
+}
+
+.article_text p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.article_blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
