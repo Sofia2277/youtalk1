@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,31 +16,34 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-1">
                     <div class="header_logo">
-                        <img src="./you_img/svgs/logo.svg" alt="logo">
+                        <a href="#">
+                            <img src="./you_img/svgs/logo.svg" alt="logo">
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <div class="header_list">
                         <ul>
-                            <li>О нас</li>
-                            <li>Тарифы</li>
-                            <li>Для бизнеса</li>
-                            <li>Психологам</li>
-                            <li>Сертификат</li>
-                            <li>Материалы
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Тарифы</a></li>
+                            <li><a href="#">Для бизнеса</a></li>
+                            <li><a href="#">Психологам</a></li>
+                            <li><a href="#">Сертификат</a></li>
+                            <li>
+                                <a href="#"><span>Материалы</span>
                                 <img src="./you_img/svgs/Vector.svg" alt="array">
+                            </a>
                             </li>
-
-                            <li>FAQ</li>
+                            <li><a href="#">FAQ</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="header_button">
                         <a href="#">
-                            <button>Подобрать психолога</button>
+                            Подобрать психолога
                         </a>
                     </div>
                 </div>
@@ -65,91 +68,271 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="tabs">
-                            <ul class="nav nav-pills">
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tab_1" href="#">
-                                        <img src="./you_img/svgs/emoji1.svg" alt="emoji">Все
-                                    </a>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">
+                                        <img src="./you_img/svgs/emoji1.svg" alt="emoji">
+                                        <span>Все</span>
+                                    </button>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Самооценка и самопринятие</a>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="selfand-tab" data-bs-toggle="tab" data-bs-target="#selfand-tab-pane" type="button" role="tab" aria-controls="selfand-tab-pane" aria-selected="false">
+                                        <span>Самооценка и самопринятие</span>
+                                    </button>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tab_2" href="#">
-                                        <img src="./you_img/svgs/emoji2.svg" alt="unicorn">Self
-                                    </a>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="self-tab" data-bs-toggle="tab" data-bs-target="#self-tab-pane" type="button" role="tab" aria-controls="self-tab-pane" aria-selected="false">
+                                        <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
+                                        <span>Self</span>
+                                    </button>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Чувства и эмоции</a>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="feelingsand-tab" data-bs-toggle="tab" data-bs-target="#feelingsand-tab-pane" type="button" role="tab" aria-controls="feelingsand-tab-pane" aria-selected="false">
+                                        <span>Чувства и эмоции</span>
+                                    </button>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Тревога</a>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="anxiety-tab" data-bs-toggle="tab" data-bs-target="#anxiety-tab-pane" type="button" role="tab" aria-controls="anxiety-tab-pane" aria-selected="false">
+                                        <span>Тревога</span>
+                                    </button>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Упражнения</a>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="exercises-tab" data-bs-toggle="tab" data-bs-target="#exercises-tab-pane" type="button" role="tab" aria-controls="exercises-tab-pane" aria-selected="false">
+                                        <span>Упражнения</span>
+                                    </button>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Психология питания</a>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pp-tab" data-bs-toggle="tab" data-bs-target="#pp-tab-pane" type="button" role="tab" aria-controls="pp-tab-pane" aria-selected="false">
+                                        <span>Психология питания</span>
+                                    </button>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Насилие</a>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="violence-tab" data-bs-toggle="tab" data-bs-target="#violence-tab-pane" type="button" role="tab" aria-controls="violence-tab-pane" aria-selected="false">
+                                        <span>Насилие</span>
+                                    </button>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Личное здоровье</a>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="selfhealth-tab" data-bs-toggle="tab" data-bs-target="#selfhealth-tab-pane" type="button" role="tab" aria-controls="selfhealth-tab-pane" aria-selected="false">
+                                        <span>Личное здоровье</span>
+                                    </button>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section_2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="article_blocks">
-                            <div class="article_img">
-                                <img src="./you_img/eggs.png" alt="eggs">
-                                <div class="article_buttons">
-                                    <button>
-                                    <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
-                                    <p>Самооценка и самопринятие</p>
-                                    </button>
-                                    <button>
-                                    <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
-                                    <p>Self</p>
-                                    </button>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+                                    <div class="content">
+                                        <div class="content_header">
+                                            <div class="ch_block">
+                                                <div class="article_blocks">
+                                                    <div class="article_img">
+                                                        <img src="./you_img/eggs.png" alt="eggs">
+                                                        <div class="article_buttons">
+                                                            <button>
+                                                            <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
+                                                            <p>Самооценка и самопринятие</p>
+                                                            </button>
+                                                            <button>
+                                                            <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
+                                                            <p>Self</p>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article_text">
+                                                        <h2>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+                                                        <p>Автор: Лиза Файнтух</p>
+                                                        <span>Изначально термин «эмоциональное профессиональной сфере и относился...</span>
+                                                        <p>21.08.2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ch_block">
+                                                <div class="article_blocks">
+                                                    <div class="article_img">
+                                                        <img src="./you_img/running.png" alt="running">
+                                                        <div class="article_buttons">
+                                                            <button>
+                                                        <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
+                                                        <p>Self</p>
+                                                        </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article_text">
+                                                        <h2>Как не утонуть в тревоге и управлять своими страхами</h2>
+                                                        <p>Автор: Екатерина Бельтюкова</p>
+                                                        <span>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</span>
+                                                        <p>11.08.2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content_main">
+                                            <div class="cm_block">
+                                                <div class="article_blocks">
+                                                    <div class="article_img">
+                                                        <img src="./you_img/inbed.png" alt="lady in bed">
+                                                        <div class="article_buttons">
+                                                            <button>
+                                                        <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
+                                                        <p>Self</p>
+                                                        </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article_text">
+                                                        <h2>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+                                                        <p>Автор: Лиза Файнтух</p>
+                                                        <span>Изначально термин «эмоциональное профессиональной сфере и относился...</span>
+                                                        <p>11.08.2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm_block">
+                                                <div class="article_blocks">
+                                                    <div class="article_img">
+                                                        <img src="./you_img/inpool.png" alt="running">
+                                                        <div class="article_buttons">
+                                                            <button>
+                                                        <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
+                                                        <p>Self</p>
+                                                        </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article_text">
+                                                        <h2>Как не утонуть в тревоге и управлять своими страхами</h2>
+                                                        <p>Автор: Екатерина Бельтюкова</p>
+                                                        <span>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</span>
+                                                        <p>11.08.2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm_block">
+                                                <div class="article_blocks">
+                                                    <div class="article_img">
+                                                        <img src="./you_img/angry.png" alt="running">
+                                                        <div class="article_buttons">
+                                                            <button>
+                                                        <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
+                                                        <p>Self</p>
+                                                        </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article_text">
+                                                        <h2>Как управлять своими эмоциями: 8 шагов</h2>
+                                                        <p>Автор: Екатерина Бельтюкова</p>
+                                                        <span>Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</span>
+                                                        <p>7.08.2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm_block">
+                                                <div class="article_blocks">
+                                                    <div class="article_img">
+                                                        <img src="./you_img/oldlady.png" alt="running">
+                                                        <div class="article_buttons">
+                                                            <button>
+                                                        <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
+                                                        <p>Self</p>
+                                                        </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article_text">
+                                                        <h2>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+                                                        <p>Автор: Лиза Файнтух</p>
+                                                        <span>Изначально термин «эмоциональное профессиональной сфере и относился...</span>
+                                                        <p>11.08.2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm_block">
+                                                <div class="article_blocks">
+                                                    <div class="article_img">
+                                                        <img src="./you_img/comp.png" alt="running">
+                                                        <div class="article_buttons">
+                                                            <button>
+                                                        <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
+                                                        <p>Self</p>
+                                                        </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article_text">
+                                                        <h2>Как не утонуть в тревоге и управлять своими страхами</h2>
+                                                        <p>Автор: Екатерина Бельтюкова</p>
+                                                        <span>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</span>
+                                                        <p>11.08.2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cm_block">
+                                                <div class="article_blocks">
+                                                    <div class="article_img">
+                                                        <img src="./you_img/people.png" alt="running">
+                                                        <div class="article_buttons">
+                                                            <button>
+                                                        <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
+                                                        <p>Self</p>
+                                                        </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="article_text">
+                                                        <h2>Как управлять своими эмоциями: 8 шагов</h2>
+                                                        <p>Автор: Екатерина Бельтюкова</p>
+                                                        <span>Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</span>
+                                                        <p>7.08.2021</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="article_text">
-                                <h2>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
-                                <p>Автор: Лиза Файнтух</p>
-                                <span>Изначально термин «эмоциональное профессиональной сфере и относился...</span>
-                                <p>21.08.2021</p>
+                                <div class="tab-pane fade" id="selfand-tab-pane" role="tabpanel" aria-labelledby="selfand-tab" tabindex="0">..2.</div>
+                                <div class="tab-pane fade" id="self-tab-pane" role="tabpanel" aria-labelledby="self-tab" tabindex="0">..3.</div>
+                                <div class="tab-pane fade" id="feelingsand-tab-pane" role="tabpanel" aria-labelledby="feelingsand-tab" tabindex="0">.4..</div>
+                                <div class="tab-pane fade" id="anxiety-tab-pane" role="tabpanel" aria-labelledby="anxiety-tab" tabindex="0">.5..</div>
+                                <div class="tab-pane fade" id="exercises-tab-pane" role="tabpanel" aria-labelledby="exercises-tab" tabindex="0">.6..</div>
+                                <div class="tab-pane fade" id="pp-tab-pane" role="tabpanel" aria-labelledby="pp-tab" tabindex="0">.7..</div>
+                                <div class="tab-pane fade" id="violence-tab-pane" role="tabpanel" aria-labelledby="violence-tab" tabindex="0">.8..</div>
+                                <div class="tab-pane fade" id="selfhealth-tab-pane" role="tabpanel" aria-labelledby="selfhealth-tab" tabindex="0">.9..</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="article_blocks">
-                            <div class="article_img">
-                                <img src="./you_img/running.png" alt="running">
-                                <button>
-                                    <img src="./you_img/svgs/emoji2.svg" alt="unicorn">
-                                    <p>Self</p>
-                                </button>
-                            </div>
-                            <div class="article_text">
-                                <h2>Как не утонуть в тревоге и управлять своими страхами</h2>
-                                <p>Автор: Екатерина Бельтюкова</p>
-                                <span>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</span>
-                                <p>11.08.2021</p>
-                            </div>
+                    <div class="col-lg-12">
+                        <div class="more_button">
+                            <a href="#">
+                                <button>Еще</button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer_ul">
+                        <ul>
+                            <li>О нас</li>
+                            <li>Тарифы</li>
+                            <li>Для бизнеса</li>
+                            <li>Психологам</li>
+                            <li>FAQ</li>
+                        </ul>
+                        <ul>
+                            <li>Блог</li>
+                            <li>Вебинары</li>
+                            <li>Подскаст</li>
+                            <li>Сертификат</li>
+                            <li>Контакты</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5"></div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 
 </html>
